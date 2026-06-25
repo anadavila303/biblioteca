@@ -1,0 +1,13 @@
+[
+  {
+    "table": "estudiantes",
+    "cedula": "",
+    "nombre": "",
+    "edad": "exit",
+    "sexo": "F",
+    "carrera": "",
+    "librosPrestados": [
+      "el principito"
+    ]
+  }
+]

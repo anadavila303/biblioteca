@@ -1,0 +1,23 @@
+[
+  {
+    "table": "libros",
+    "id": 1782352890022,
+    "titulo": "principito",
+    "autor": "jfernf",
+    "disponible": true
+  },
+  {
+    "table": "libros",
+    "id": 1782423008942,
+    "titulo": "el principito",
+    "autor": "fiefi",
+    "disponible": false
+  },
+  {
+    "table": "libros",
+    "id": 1782423428812,
+    "titulo": "cniw",
+    "autor": "cbwubfu",
+    "disponible": true
+  }
+]
