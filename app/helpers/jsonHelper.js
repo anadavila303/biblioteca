@@ -12,4 +12,12 @@ export const obtenerDatos = (clave) => {
     console.log(`🔍 [Helper] Buscando datos en la tabla [${clave}]...`);
     // Simulamos que encontramos un dato viejo
     return { mensaje: "Datos de prueba leídos correctamente" };
+
+
+export const actualizarDatos = (clave, id, nuevosDatos) => {
+    console.log(`🔄 [Helper] Actualizando registro con ID [${id}] en la tabla [${clave}]...`);
+    console.log(`📝 Nuevos datos a aplicar:`, JSON.stringify(nuevosDatos, null, 2));
+    return true;
 };
+}
+
