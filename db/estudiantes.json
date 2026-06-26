@@ -1,0 +1,17 @@
+[
+  {
+    "table": "estudiantes",
+    "cedula": "ana",
+    "nombre": "ana",
+    "edad": 20,
+    "sexo": "f",
+    "carrera": "sistemaas",
+    "librosPrestados": [
+      {
+        "idLibro": 1782493510117,
+        "titulo": "principito",
+        "fechaPrestamo": "26/6/2026"
+      }
+    ]
+  }
+]
