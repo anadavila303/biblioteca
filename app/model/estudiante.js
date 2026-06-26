@@ -1,36 +1,13 @@
-import fs from "fs/promises";
+import Model from "./model.js";
 
-export default class Model {
-  table = "models";
+export default class Estudiante extends Model {
+  table = "estudiantes"; // Nombre del archivo json
 
-  getTable() {
-    return this.table;
-  }
-
-  async save(payload) {
-    let datos = await this.load();
-    datos.push(payload);
-    await fs.writeFile(
-      `db/${this.getTable()}.json`,
-      JSON.stringify(datos, null, 2),
-    );
-    return payload;
-  }
-
-  async load() {
-    try {
-      const data = await fs.readFile(`db/${this.getTable()}.json`, "utf-8");
-      return JSON.parse(data);
-    } catch (error) {
-      return [];
-    }
-  }
-
-  async update(datos) {
-    await fs.writeFile(
-      `db/${this.getTable()}.json`,
-      JSON.stringify(datos, null, 2),
-    );
-    return datos;
+  constructor(cedula, nombre, carrera) {
+    super();
+    this.cedula = cedula;
+    this.nombre = nombre;
+    this.carrera = carrera;
+    this.librosPrestados = [];
   }
 }
